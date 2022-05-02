@@ -10,6 +10,13 @@ public class DealerApp {
         Car newCar = container.getBean(Car.class);
         System.out.println("cars brand : "+ newCar.getMake());
 
+        Person person1 = container.getBean(Person.class);
+        System.out.println("Person's name: "+ person1.getName());
+        System.out.println("Car's name: "+ newCar.getMake());
+        System.out.println("Person's car: "+ person1.getCar());
+
+
+
 
     }
 }

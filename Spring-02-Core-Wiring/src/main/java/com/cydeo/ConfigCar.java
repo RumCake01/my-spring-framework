@@ -12,7 +12,7 @@ public class ConfigCar {
     @Bean
     Car car() {
         Car c = new Car();
-        c.setMake("BMW");
+        c.setMake("Jeep");
         return c;
     }
 
@@ -23,5 +23,14 @@ public class ConfigCar {
         Car c = new Car();
         c.setMake("Aston Martin");
         return c;
+    }
+
+    // ****   // Example of direct wiring
+    @Bean
+    Person person(){
+        Person p =new Person();
+        p.setName("Anna");
+        p.setCar(car2());
+        return p;
     }
 }
