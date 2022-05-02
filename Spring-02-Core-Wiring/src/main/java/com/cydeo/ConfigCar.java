@@ -27,10 +27,21 @@ public class ConfigCar {
 
     // ****   // Example of direct wiring
     @Bean
-    Person person(){
-        Person p =new Person();
+    Person person() {
+        Person p = new Person();
         p.setName("Anna");
         p.setCar(car2());
         return p;
     }
+
+    // ****   // Example of Auto-wiring, provide another bean as a method parameter through the constructor of the Class
+
+    @Bean
+    Person person(Car car) {
+        Person p = new Person();
+        p.setName("RumCake");
+        p.setCar(car2());
+        return p;
+    }
+
 }
