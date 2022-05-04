@@ -21,15 +21,15 @@ public class CydeoApp {
 
 
         // this below is singleton pattern
-        CommentService cs1 = context.getBean(CommentService.class);
-        CommentService cs2 = context.getBean(CommentService.class);
-        // we are printing the memory location below
-        System.out.println(cs1);
-        System.out.println(cs2);
-
-        // this below is singleton pattern
-        // lets check if beans are the same or not, returns true because we are using the same objects
-        System.out.println(cs1==cs2);
+//        CommentService cs1 = context.getBean(CommentService.class);
+//        CommentService cs2 = context.getBean(CommentService.class);
+//        // we are printing the memory location below
+//        System.out.println(cs1);
+//        System.out.println(cs2);
+//
+//        // this below is singleton pattern
+//        // lets check if beans are the same or not, returns true because we are using the same objects
+//        System.out.println(cs1==cs2);
 
     }
 }
