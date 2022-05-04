@@ -10,6 +10,9 @@ public class CydeoApp {
         Java java = container.getBean(Java.class);
         java.getTeachingHours();
 
+        Selenium selenium= container.getBean(Selenium.class);
+        selenium.getTeachingHours();
+
 
     }
 }
