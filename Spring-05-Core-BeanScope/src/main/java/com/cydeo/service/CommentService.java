@@ -4,11 +4,13 @@ import com.cydeo.model.Comment;
 import com.cydeo.proxy.CommentNotificationProxy;
 import com.cydeo.repository.CommentRepository;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("prototype")// this annotation creates new bean instance
+//@Scope("prototype")// this annotation creates new bean instance
+@Scope(BeanDefinition.SCOPE_PROTOTYPE) // another way to create new bean, same things as the @Scope("prototype")
 public class CommentService {
 
     // keep dependencies as private
