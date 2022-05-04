@@ -11,7 +11,7 @@ public class CydeoApp {
 
     public static void main(String[] args) {
 
-        // we pass the modal object here to build the command and then callign the method we create the command publish results
+        // we pass the modal object here to build the command and then calling the method we create the command publish results
 
         Comment comment = new Comment();
         comment.setAuthor("Dostoevsky");
