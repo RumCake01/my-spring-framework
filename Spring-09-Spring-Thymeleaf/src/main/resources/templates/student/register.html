@@ -18,8 +18,12 @@
 
 <h2 th:text="${'We welcome you, '+ students.get(3).firstName}"></h2>
 
+<!--Link 2 ways to do it: -->
+
+<a th:href="@{https://cydeo.com/}"> Cydeo Page, Click here </a><br>
 
 
+<a th:href="@{/student/welcome}">Link2 Takes back to student welcome page </a><br>
 
 </body>
 </html>
