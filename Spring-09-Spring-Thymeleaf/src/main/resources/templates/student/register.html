@@ -22,8 +22,31 @@
 
 <a th:href="@{https://cydeo.com/}"> Cydeo Page, Click here </a><br>
 
-
 <a th:href="@{/student/welcome}">Link2 Takes back to student welcome page </a><br>
+
+
+<!--Adding Parameters to Link-->
+
+<a th:href="@{/student/welcome(id=3)}"> Link2</a>
+<a th:href="@{/student/welcome(id=${students.get(1).firstName})}"> Link2</a>
+
+
+<!--Iteration-->
+
+<ul>
+    <li th:each="student : ${students}" th:text="${student.firstName}"></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
